@@ -86,7 +86,7 @@
                         string swe = Console.ReadLine();
                         Console.Write("Write word in English: ");
                         string eng = Console.ReadLine();
-                        dictionary.Add(new SweEngGloss(s, e));
+                        dictionary.Add(new SweEngGloss(swe, eng));
                     }
                 }
                 else if (command == "delete")
