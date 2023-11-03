@@ -105,14 +105,14 @@
                     else if (argument.Length == 1)
                     {
                         Console.WriteLine("Write word in Swedish: ");
-                        string s = Console.ReadLine();
+                        string del_swe = Console.ReadLine();
                         Console.Write("Write word in English: ");
                         string e = Console.ReadLine();
                         int index = -1;
                         for (int i = 0; i < dictionary.Count; i++)
                         {
                             SweEngGloss gloss = dictionary[i];
-                            if (gloss.word_swe == s && gloss.word_eng == e)
+                            if (gloss.word_swe == del_swe && gloss.word_eng == e)
                                 index = i;
                         }
                         dictionary.RemoveAt(index);
