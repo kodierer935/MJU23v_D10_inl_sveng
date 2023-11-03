@@ -85,7 +85,7 @@
                         Console.WriteLine("Write word in Swedish: ");
                         string swe = Console.ReadLine();
                         Console.Write("Write word in English: ");
-                        string e = Console.ReadLine();
+                        string eng = Console.ReadLine();
                         dictionary.Add(new SweEngGloss(s, e));
                     }
                 }
