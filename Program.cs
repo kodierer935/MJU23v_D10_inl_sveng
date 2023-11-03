@@ -10,12 +10,14 @@
             {
                 this.word_swe = word_swe; this.word_eng = word_eng;
             }
+            // TODO: felhantering för ogiltiga inmatningar
             public SweEngGloss(string line)
             {
                 string[] words = line.Split('|');
                 this.word_swe = words[0]; this.word_eng = words[1];
             }
         }
+
         static void Main(string[] args)
         {
             string defaultFile = "..\\..\\..\\dict\\sweeng.lis";
@@ -25,17 +27,20 @@
                 Console.Write("> ");
                 string[] argument = Console.ReadLine().Split();
                 string command = argument[0];
+                // TODO: quit ska avsluta while loopen. (break;)
                 if (command == "quit")
                 {
                     Console.WriteLine("Goodbye!");
+                    break;
                 }
+                
                 else if (command == "load")
                 {
                     if(argument.Length == 2)
                     {
                         using (StreamReader sr = new StreamReader(argument[1]))
                         {
-                            dictionary = new List<SweEngGloss>(); // Empty it!
+                            dictionary = new List<SweEngGloss>(); // TODO: Tömma dictionary vid varje load
                             string line = sr.ReadLine();
                             while (line != null)
                             {
@@ -49,7 +54,7 @@
                     {
                         using (StreamReader sr = new StreamReader(defaultFile))
                         {
-                            dictionary = new List<SweEngGloss>(); // Empty it!
+                            dictionary = new List<SweEngGloss>(); // TODO: Tömma dictionary vid varje load
                             string line = sr.ReadLine();
                             while (line != null)
                             {
@@ -59,9 +64,11 @@
                             }
                         }
                     }
+                    // NYI: felhantering för filer som ej hittas
                 }
                 else if (command == "list")
                 {
+                    //TODO: felhantering för tom lista eller ingen vald fil
                     foreach(SweEngGloss gloss in dictionary)
                     {
                         Console.WriteLine($"{gloss.word_swe,-10}  - {gloss.word_eng,-10}");
@@ -92,6 +99,7 @@
                             if (gloss.word_swe == argument[1] && gloss.word_eng == argument[2])
                                 index = i;
                         }
+                        //NYI: felhantering om ordet inte finns i ordlistan.
                         dictionary.RemoveAt(index);
                     }
                     else if (argument.Length == 1)
@@ -120,6 +128,7 @@
                                 Console.WriteLine($"English for {gloss.word_swe} is {gloss.word_eng}");
                             if (gloss.word_eng == argument[1])
                                 Console.WriteLine($"Swedish for {gloss.word_eng} is {gloss.word_swe}");
+                            
                         }
                     }
                     else if (argument.Length == 1)
@@ -134,6 +143,7 @@
                                 Console.WriteLine($"Swedish for {gloss.word_eng} is {gloss.word_swe}");
                         }
                     }
+                    //NYI: felhantering om ordet inte finns i ordlistan.
                 }
                 else
                 {
