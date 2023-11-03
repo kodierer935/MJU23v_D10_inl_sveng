@@ -83,7 +83,7 @@
                     else if(argument.Length == 1)
                     {
                         Console.WriteLine("Write word in Swedish: ");
-                        string s = Console.ReadLine();
+                        string swe = Console.ReadLine();
                         Console.Write("Write word in English: ");
                         string e = Console.ReadLine();
                         dictionary.Add(new SweEngGloss(s, e));
