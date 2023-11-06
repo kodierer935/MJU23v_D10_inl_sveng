@@ -140,9 +140,6 @@
                         string userInput = Console.ReadLine();
                         foreach (SweEngGloss gloss in dictionary)
                         {
-                            if (gloss.word_swe == userInput)
-                                
-                            if (gloss.word_eng == userInput)
                                 
                         }
                     }
