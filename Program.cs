@@ -139,7 +139,6 @@ namespace MJU23v_D10_inl_sveng
                     }
 
                         
-                      Console.WriteLine("Write word to be translated: ");
 
                       
                      
