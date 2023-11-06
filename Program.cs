@@ -141,7 +141,7 @@ namespace MJU23v_D10_inl_sveng
                         
                       Console.WriteLine("Write word to be translated: ");
                        string userInput = Console.ReadLine();
-                      foreach (SweEngGloss gloss in dictionary)
+                      
                      
                     //NYI: felhantering om ordet inte finns i ordlistan.
                 }
