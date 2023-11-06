@@ -141,7 +141,7 @@
                         foreach (SweEngGloss gloss in dictionary)
                         {
                             if (gloss.word_swe == userInput)
-                                Console.WriteLine($"English for {gloss.word_swe} is {gloss.word_eng}");
+                                
                             if (gloss.word_eng == userInput)
                                 
                         }
