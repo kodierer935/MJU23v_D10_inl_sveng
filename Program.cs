@@ -28,6 +28,7 @@ namespace MJU23v_D10_inl_sveng
 
         static void Main(string[] args)
         {
+            //FIXME; ingen annan fil kan väljas || program får fel ifall man försöker ladda annan fil.
             string defaultFile = "..\\..\\..\\dict\\sweeng.lis";
             Console.WriteLine("Welcome to the dictionary app!");
             do
