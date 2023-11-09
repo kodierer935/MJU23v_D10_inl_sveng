@@ -134,9 +134,9 @@ namespace MJU23v_D10_inl_sveng
                     foreach (SweEngGloss gloss in dictionary)
                     {
                         if (gloss.word_swe == userInput)
-                            Input($"English for {gloss.word_swe} is {gloss.word_eng}");
+                            Console.WriteLine($"English for {gloss.word_swe} is {gloss.word_eng}");
                         if (gloss.word_eng == userInput)
-                            Input($"Swedish for {gloss.word_eng} is {gloss.word_swe}");
+                            Console.WriteLine($"Swedish for {gloss.word_eng} is {gloss.word_swe}");
                     } 
                      
                     //NYI: felhantering om ordet inte finns i ordlistan.
