@@ -91,6 +91,7 @@ namespace MJU23v_D10_inl_sveng
                     {
                         dictionary.Add(new SweEngGloss(argument[1], argument[2]));
                     }
+                    //FIXME: felhantering ifall endast ett ord är skrivet efter kommandot "new" t.ex. new sol.
                     else if(argument.Length == 1)
                     {
                         string swe = Input("Write word in Swedish: ");
