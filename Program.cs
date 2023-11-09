@@ -84,7 +84,7 @@ namespace MJU23v_D10_inl_sveng
                     }
                     else if(argument.Length == 1)
                     {
-                        Console.WriteLine("Write word in Swedish: ");
+                        Console.Write("Write word in Swedish: ");
                         string swe = Console.ReadLine();
                         Console.Write("Write word in English: ");
                         string eng = Console.ReadLine();
@@ -106,7 +106,7 @@ namespace MJU23v_D10_inl_sveng
                     }
                     else if (argument.Length == 1)
                     {
-                        Console.WriteLine("Write word in Swedish: ");
+                        Console.Write("Write word in Swedish: ");
                         string del_swe = Console.ReadLine();
                         Console.Write("Write word in English: ");
                         string del_eng = Console.ReadLine();
@@ -136,11 +136,7 @@ namespace MJU23v_D10_inl_sveng
                             Console.WriteLine($"English for {gloss.word_swe} is {gloss.word_eng}");
                         if (gloss.word_eng == userInput)
                             Console.WriteLine($"Swedish for {gloss.word_eng} is {gloss.word_swe}");
-                    }
-
-                        
-
-                      
+                    } 
                      
                     //NYI: felhantering om ordet inte finns i ordlistan.
                 }
