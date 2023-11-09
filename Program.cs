@@ -4,6 +4,12 @@ namespace MJU23v_D10_inl_sveng
 {
     internal class Program
     {
+        public static string Input(string input)
+        {
+            Console.Write(input);
+            return Console.ReadLine();
+        }
+
         static List<SweEngGloss> dictionary;
         class SweEngGloss
         {
@@ -84,8 +90,7 @@ namespace MJU23v_D10_inl_sveng
                     }
                     else if(argument.Length == 1)
                     {
-                        Console.Write("Write word in Swedish: ");
-                        string swe = Console.ReadLine();
+                        string swe = Input("Write word in Swedish: ");
                         Console.Write("Write word in English: ");
                         string eng = Console.ReadLine();
                         dictionary.Add(new SweEngGloss(swe, eng));
