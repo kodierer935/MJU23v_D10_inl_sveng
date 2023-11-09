@@ -91,8 +91,7 @@ namespace MJU23v_D10_inl_sveng
                     else if(argument.Length == 1)
                     {
                         string swe = Input("Write word in Swedish: ");
-                        Console.Write("Write word in English: ");
-                        string eng = Console.ReadLine();
+                        string eng = Input("Write word in English: ");
                         dictionary.Add(new SweEngGloss(swe, eng));
                     }
                 }
