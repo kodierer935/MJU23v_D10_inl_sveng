@@ -129,8 +129,8 @@ namespace MJU23v_D10_inl_sveng
                         userInput = argument[1];
                     if (argument.Length == 1)
                     {
-                        Console.WriteLine("Write word to be translated: ");
-                        userInput = Console.ReadLine();
+                        
+                        userInput = Input("Write word to be translated: ");
                     }
                     foreach (SweEngGloss gloss in dictionary)
                     {
