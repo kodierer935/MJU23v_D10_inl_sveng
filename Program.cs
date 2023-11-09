@@ -76,7 +76,7 @@ namespace MJU23v_D10_inl_sveng
                 }
                 else if (command == "list")
                 {
-                    //TODO: felhantering för tom lista eller ingen vald fil
+                    //FIXME: felhantering för tom lista eller ingen vald fil
                     foreach(SweEngGloss gloss in dictionary)
                     {
                         Console.WriteLine($"{gloss.word_swe,-10}  - {gloss.word_eng,-10}");
