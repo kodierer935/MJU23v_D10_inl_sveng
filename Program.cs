@@ -32,7 +32,7 @@ namespace MJU23v_D10_inl_sveng
             Console.WriteLine("Welcome to the dictionary app!");
             do
             {
-                Console.Write("> ");
+                Input("> ");
                 string[] argument = Console.ReadLine().Split();
                 string command = argument[0];
                 // TODO: quit ska avsluta while loopen. (break;)
