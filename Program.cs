@@ -110,8 +110,7 @@ namespace MJU23v_D10_inl_sveng
                     }
                     else if (argument.Length == 1)
                     {
-                        Console.Write("Write word in Swedish: ");
-                        string del_swe = Console.ReadLine();
+                        string del_swe = Input("Write word in Swedish: ");
                         Console.Write("Write word in English: ");
                         string del_eng = Console.ReadLine();
                         int index = -1;
