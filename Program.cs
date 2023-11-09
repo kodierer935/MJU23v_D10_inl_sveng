@@ -129,15 +129,14 @@ namespace MJU23v_D10_inl_sveng
                         userInput = argument[1];
                     if (argument.Length == 1)
                     {
-                        
                         userInput = Input("Write word to be translated: ");
                     }
                     foreach (SweEngGloss gloss in dictionary)
                     {
                         if (gloss.word_swe == userInput)
-                            Console.WriteLine($"English for {gloss.word_swe} is {gloss.word_eng}");
+                            Input($"English for {gloss.word_swe} is {gloss.word_eng}");
                         if (gloss.word_eng == userInput)
-                            Console.WriteLine($"Swedish for {gloss.word_eng} is {gloss.word_swe}");
+                            Input($"Swedish for {gloss.word_eng} is {gloss.word_swe}");
                     } 
                      
                     //NYI: felhantering om ordet inte finns i ordlistan.
