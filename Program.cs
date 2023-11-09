@@ -109,7 +109,7 @@ namespace MJU23v_D10_inl_sveng
                             if (gloss.word_swe == argument[1] && gloss.word_eng == argument[2])
                                 index = i;
                         }
-                        //NYI: felhantering om ordet inte finns i ordlistan.
+                        //FIXME: felhantering om ordet inte finns i ordlistan.
                         dictionary.RemoveAt(index);
                     }
                     else if (argument.Length == 1)
