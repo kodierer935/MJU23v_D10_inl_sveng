@@ -111,8 +111,7 @@ namespace MJU23v_D10_inl_sveng
                     else if (argument.Length == 1)
                     {
                         string del_swe = Input("Write word in Swedish: ");
-                        Console.Write("Write word in English: ");
-                        string del_eng = Console.ReadLine();
+                        string del_eng = Input("Write word in English: ");
                         int index = -1;
                         for (int i = 0; i < dictionary.Count; i++)
                         {
