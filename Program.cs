@@ -86,6 +86,7 @@ namespace MJU23v_D10_inl_sveng
                 }
                 else if (command == "new")
                 {
+                    //FIXME: filhantering eller separat lista för nya ord utan att ladda fil. 
                     if (argument.Length == 3)
                     {
                         dictionary.Add(new SweEngGloss(argument[1], argument[2]));
